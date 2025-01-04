@@ -86,8 +86,8 @@ const Navigation = () => {
   const [selectedGame, setSelectedGame] = useState(2);
 
   return (
-    <div className="top-0 fixed border-white/30 bg-main-nav border-r w-14 h-screen">
-      <div className="flex flex-col justify-between items-center mt-[17vh]">
+    <div className="top-0 left-0 absolute border-white/30 bg-main-nav border-r w-14 h-screen">
+      <div className="flex flex-col justify-between items-center pt-[17vh]">
         <div className="space-y-2 w-full">
           {sideMenuGames.map((game, index) => (
             <SideGames

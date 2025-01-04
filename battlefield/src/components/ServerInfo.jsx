@@ -4,9 +4,9 @@ import ServerConfig from "./ServerConfig";
 
 const ServerInfo = () => {
   return (
-    <div className="px-6 h-full text-white">
-      <div className="">
-        <div className="mb-8">
+    <div className="mx-20 py-4 h-full text-white">
+      <div className="relative space-y-8 lg:w-3/4 h-full overflow-y-auto">
+        <div className="top-0 z-10 sticky mb-14">
           <div className="flex items-center gap-4">
             <img src="/img/vectors/back.svg" alt="back" />
             <p className="flex items-center gap-4 font-semibold text-xs">
