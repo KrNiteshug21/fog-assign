@@ -18,7 +18,7 @@ const ServerInfo = () => {
           </div>
           <h3 className="font-semibold text-3xl">SERVER INFO</h3>
         </div>
-        <div className="md:w-2/3 h-[85vh] overflow-y-auto scrollbar">
+        <div className="pr-4 w-max h-[85vh] overflow-y-auto scrollbar">
           <ServerConfig />
           <MapRotation />
         </div>

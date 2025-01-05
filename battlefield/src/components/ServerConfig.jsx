@@ -18,7 +18,7 @@ const ServerConfig = () => {
           https://discord.gg/3r5NK4d join
         </p>
       </section>
-      <section className="flex items-center gap-4 mt-4 w-full font-medium text-xs tracking-wider">
+      <section className="flex flex-wrap items-center gap-4 mt-4 w-full font-medium text-xs tracking-wider">
         <button className="border-1 border-white/20 hover:bg-white px-4 py-2 w-52 text-center hover:text-primary-black transition-all duration-300">
           JOIN
         </button>
@@ -51,7 +51,7 @@ const ServerConfig = () => {
           <h3 className="font-semibold text-xl">60Hz</h3>
         </div>
       </section>
-      <section className="md:w-3/4">
+      <section className="md:w-4/5">
         <div className="flex justify-between items-start gap-8">
           <GameSettings />
           <GameAdvancedSettings />

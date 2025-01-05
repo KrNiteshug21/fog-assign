@@ -103,7 +103,7 @@ const MapRotation = () => {
   return (
     <div className="space-y-4 w-full text-white">
       <h3 className="font-medium text-xs">Map Rotation</h3>
-      <div className="gap-4 grid grid-cols-4 w-max">
+      <div className="gap-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-max">
         {maps.map((map, index) => (
           <div key={index} className="relative w-52 h-28 overflow-hidden group">
             <div className="transition-transform group-hover:-translate-y-1 duration-200">

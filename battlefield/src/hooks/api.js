@@ -1,12 +1,13 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
-const API_URL = "http://localhost:3000";
+const API_URL = import.meta.env.VITE_API_URL;
 
 export const useSettings = () => {
   const [settings, setSettings] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [isError, setIsError] = useState(false);
+  console.log("API_URL is", API_URL);
 
   useEffect(() => {
     const fetchSettings = async () => {
