@@ -10,14 +10,9 @@ export const getRules = async (req, res) => {
 };
 
 export const createRule = async (req, res) => {
-  const rule = new Rules({
-    key: req.body.key,
-    value: req.body.value,
-  });
-
   try {
-    const newRule = await rule.save();
-    return res.status(201).json(newRule);
+    const rule = await Rules.create(req.body);
+    return res.status(201).json(rule);
   } catch (error) {
     return res.status(400).json({ message: error.message });
   }

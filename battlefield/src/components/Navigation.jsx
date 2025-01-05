@@ -84,9 +84,10 @@ const UtilComp = ({ util }) => {
 
 const Navigation = () => {
   const [selectedGame, setSelectedGame] = useState(2);
+  //  className="top-0 left-0 absolute border-white/30 bg-main-nav border-r w-14 h-screen"
 
   return (
-    <div className="top-0 left-0 absolute border-white/30 bg-main-nav border-r w-14 h-screen">
+    <div className="top-0 left-0 fixed border-white/20 border-r-1 w-14 h-screen">
       <div className="flex flex-col justify-between items-center pt-[17vh]">
         <div className="space-y-2 w-full">
           {sideMenuGames.map((game, index) => (

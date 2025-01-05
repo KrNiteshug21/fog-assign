@@ -45,3 +45,17 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.scrollbar::-webkit-scrollbar-track {
+  background-color: #ffffff1b;
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 2px;
+  /* background-color: #f1f1f1; */
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background-color: #ffffffbe;
+  border-radius: 10px;
+}

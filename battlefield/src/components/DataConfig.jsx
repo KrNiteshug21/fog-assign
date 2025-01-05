@@ -15,7 +15,7 @@ const DataConfig = ({ data }) => {
           {Object.keys(dataObj).map((key) => (
             <p
               className="flex justify-between items-center gap-2 border-white/20 hover:bg-white px-2 py-1 border-b-1 font-medium hover:text-primary-black tracking-wider transition-all duration-200 ease-in-out"
-              key={key}
+              key={`${key}-${dataObj._id}`}
             >
               <span className="text-wrap">{key.toUpperCase()}</span>{" "}
               <span className="">

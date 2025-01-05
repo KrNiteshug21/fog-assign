@@ -1,10 +1,13 @@
 import express from "express";
 const app = express();
 const port = process.env.PORT || 3000;
+import cors from "cors";
 import connectDB from "./config/dbConn.js";
 import settingRoute from "./routes/settingRoute.js";
 import rulesRoute from "./routes/rulesRoute.js";
 import advancedSettingRoute from "./routes/advancedSettingRoute.js";
+
+app.use(cors());
 
 // Middleware
 app.use(express.json());
@@ -13,10 +16,6 @@ app.use(express.json());
 connectDB();
 
 // Routes
-app.use("/api", (req, res) => {
-  res.send("Hello World");
-});
-
 app.use("/api/settings", settingRoute);
 app.use("/api/rules", rulesRoute);
 app.use("/api/advanced-settings", advancedSettingRoute);

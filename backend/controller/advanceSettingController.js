@@ -10,14 +10,9 @@ export const getAdvancedSettings = async (req, res) => {
 };
 
 export const createAdvancedSetting = async (req, res) => {
-  const advancedSetting = new AdvancedSetting({
-    key: req.body.key,
-    value: req.body.value,
-  });
-
   try {
-    const newAdvancedSetting = await advancedSetting.save();
-    return res.status(201).json(newAdvancedSetting);
+    const advancedSetting = await AdvancedSetting.create(req.body);
+    return res.status(201).json(advancedSetting);
   } catch (error) {
     return res.status(400).json({ message: error.message });
   }
